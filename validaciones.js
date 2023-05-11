@@ -89,4 +89,44 @@ $(document).ready(function() {
     });
   });
   
+      $(document).ready(function() {
+      $('#register-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 3
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          password: {
+            required: true,
+            minlength: 8
+          },
+          confirm_password: {
+            required: true,
+            equalTo: '#password'
+          }
+        },
+        messages: {
+          username: {
+            required: 'Por favor ingrese un nombre de usuario.',
+            minlength: 'El nombre de usuario debe tener al menos 3 caracteres.'
+          },
+          email: {
+            required: 'Por favor ingrese una dirección de correo electrónico válida.',
+            email: 'Por favor ingrese una dirección de correo electrónico válida.'
+          },
+          password: {
+            required: 'Por favor ingrese una contraseña.',
+            minlength: 'La contraseña debe tener al menos 8 caracteres.'
+          },
+          confirm_password: {
+            required: 'Por favor confirme su contraseña.',
+            equalTo: 'Las contraseñas no coinciden.'
+          }
+        },
+      });
+    });
   

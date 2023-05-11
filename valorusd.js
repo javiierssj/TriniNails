@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var valorUSD = 100; // Valor en dólares que deseas convertir
-    var accessKey = "tHLPVFtjmsUVlJsB8QvTPKURQSHoAWNbr"; // Reemplaza esto con tu Access Key de Fixer API
+    var accessKey = "HLPVFtjmsUVlJsB8QvTPKURQSHoAWNbr"; // Reemplaza esto con tu Access Key de Fixer API
 
     var url = "https://data.fixer.io/api/convert?access_key=" + accessKey + "&from=USD&to=CLP&amount=" + valorUSD;
 

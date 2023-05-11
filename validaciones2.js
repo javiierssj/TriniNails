@@ -24,7 +24,7 @@ $(document).ready(function () {
             entrar = true;
         }
         if (telefono.trim().length < 12 || telefono.trim().length > 12) {
-          mensaje += 'El Telefono no es valido, deben ser 9 numeros.<br>';
+          mensaje += 'El Telefono no es valido, deben ser 9 numeros (Además del +56).<br>';
           entrar = true;
       }
 

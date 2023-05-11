@@ -44,29 +44,34 @@
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <form method="POST" action="" id="frmRegistro">
+        <form id="form" mid="contact-form" method="post">
           <div class="form-group">
-            <label for="nombre">Nombre Completo:</label>
+            <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre">
           </div>
           <div class="form-group">
             <label for="telefono">Teléfono:</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" value="+56">
+            <!-- <input type="tel"class="form-control" id="telefono" name="telefono" > -->
+            <input type="text" class="form-control" id="telefono" placeholder="+56912345678" pattern="\x2b[0-9]+" required>
           </div>
           <div class="form-group">
             <label for="correo">Correo:</label>
-            <input type="email" class="form-control" id="correo" name="correo">
+            <input  class="form-control" id="correo" name="correo">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Requerimiento:</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <p></p>
-          <button type="submit" class="btn btn-sm btn-outline-secondary  btn-block">Registrarse</button>
+          <button type="submit" class="btn btn-secondary" style="background-color: rgb(221, 119, 216); ">Enviar</button>
+          <p style="color: black;" class="warnings" id="warnings"></p>
+  <p class="mensaje" id="mensaje"></p>
         </form>
       </div>
     </div>
   </div>
+  
+ 
   <footer class="d-flex fixed-bottom flex-wrap justify-content-between align-items-center py-3 my-4">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -98,7 +103,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-  <script src="validaciones.js"></script>
+  <script src="validaciones2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/localization/messages_es.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
